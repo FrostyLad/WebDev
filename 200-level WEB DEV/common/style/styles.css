@@ -1,0 +1,197 @@
+﻿/*
+New Perspectives on HTML5 and CSS3, 7th Edition
+158256 Assignment 3 - 20005898
+
+Typography and Color Styles for home page
+
+Author: Braden Johnston 20005898
+Date:   12/10/2020
+
+Filename: styles.css
+
+*/
+
+
+
+/*Font*/
+
+* {
+	font-family: "Arial", Black, serif;
+	font-size:16px;
+	color:black;
+}
+
+
+
+
+body {
+	background-image: url("../img/bg2.png	");
+	background-repeat: repeat;
+	background-blend-mode:screen;	
+}
+
+/* Header Navigation */
+
+body>header{
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;	
+}
+
+header div> img{
+	filter: drop-shadow(2px 2px 5px black);
+}
+
+header nav {
+	background-color:rgb(28, 75, 156);
+}
+
+header a:link {
+	color:white;
+	text-decoration: none;
+	text-align:center;
+	font-size: 22px;
+}
+
+header a:visited {
+	color:#eeeeec;
+}
+
+header a:hover {
+	color:black;
+	background-color:rgb(38, 101, 209);
+	
+}
+
+/* Main */
+main{
+	background-color: white;
+	min-height: 90%;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+main div#rightcol a{
+	color:black;
+}
+
+
+/* Footer */
+
+
+footer address {
+	background:rgb(18, 51, 110);	
+	line-height:0.4;
+	padding-top:2%;
+	padding-bottom:1%;
+	font-style: normal;
+}
+
+
+
+footer a{
+	text-decoration: none;
+}
+
+footer a:link {
+	color:white;
+}
+
+footer a:visited {
+	color:white;
+}
+
+footer a:hover {
+	color:#f9d251;
+	text-shadow:1px 1px 10px cyan;
+}
+
+footer address h1 a{
+	font-size:2em;
+}
+
+footer address p{
+	font-size:1em;
+	color:white;
+	display:inline;
+}
+footer address p.contact_info::before{
+	background-image: url('../img/hookicon.png');
+	background-size: 20px 20px;
+	background-position: right;
+	background-repeat:no-repeat;
+	display: inline-block;
+	width: 30px; 
+	height: 20px;
+	content:"";
+}
+
+footer address p small{
+	font-size:0.6em;
+	color:white;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip  .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding:0;
+	
+	/* Position the tooltip */
+	
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+aside > address, aside > .testimony{
+	border: 2px solid rgb(22, 93, 219);
+	margin: 5px;
+	text-align: left;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+aside{
+	padding: 20px;
+}
+
+
+
+aside > address > p > a{
+	color: rgb(182, 118, 0);
+	text-decoration: none;
+}
+
+aside > address > p > a:hover{
+	text-decoration: underline;
+}
+
+article img{
+	float: right;
+	margin: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}

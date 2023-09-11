@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<body>
+		<canvas id="myCanvas" width="500" height="500"
+				style="border: 1px solid black;">
+			Some Text
+		</canvas>
+		
+		<script type="text/javascript">
+		
+		
+					window.canvas = document.getElementById('myCanvas');
+					window.ctx = canvas.getContext('2d');
+					
+					ctx.moveTo(40,40);
+					ctx.lineTo(100,150);
+					ctx.lineTo(400, 40);
+					
+					for (var i = 5; i > 0; i--) {
+						ctx.lineWidth = i*16;
+						var blueValue = 255 - (i*32);
+						var greenValue = i*32;
+						ctx.strokeStyle = 'rgb(0, ' + greenValue + ',' + blueValue + ')';
+						ctx.stroke();
+						}
+		</script>
+	</body>
+</html>
